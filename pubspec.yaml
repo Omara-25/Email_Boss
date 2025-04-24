@@ -1,0 +1,40 @@
+name: Email_Boss
+description: A Flutter Email voice assistant app for Adam to help him manage emails with Flowise integration.
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.2.1
+  flutter_launcher_icons: ^0.13.1  
+  provider: ^6.0.5
+  lottie: ^2.5.0
+  speech_to_text: ^6.3.0
+  flutter_tts: ^3.8.3
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.2.2
+  permission_handler: ^10.2.0
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/loading.json
+    - assets/mai.gif
+    - assets/Email_Boss.jpg 
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/Email_Boss.jpg"   
+  adaptive_icon_foreground: "assets/Email_Boss.jpg" # For Android adaptive icons
+  
